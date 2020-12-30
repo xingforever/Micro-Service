@@ -16,7 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>2020.0.0-RC1</spring-cloud.version>
+		<spring-cloud.version>Dalston.SR4</spring-cloud.version>
 	</properties>
 
 	<dependencies>
@@ -34,6 +34,11 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 
+		</dependency>
+		<dependency>
+			<groupId>cn.hlx_dm</groupId>
+			<artifactId>hlx_dm-common-module</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

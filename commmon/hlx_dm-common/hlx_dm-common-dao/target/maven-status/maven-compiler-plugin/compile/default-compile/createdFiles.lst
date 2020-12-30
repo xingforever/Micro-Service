@@ -1,0 +1,17 @@
+cn\hlx_dm\mapper\DmSchedulerMapper.class
+cn\hlx_dm\mapper\DmItemCommentMapper.class
+cn\hlx_dm\mapper\DmCinemaMapper.class
+cn\hlx_dm\mapper\DmItemMapper.class
+cn\hlx_dm\mapper\DmImageMapper.class
+cn\hlx_dm\mapper\DmOrderLinkUserMapper.class
+cn\hlx_dm\mapper\DmCinemaSeatMapper.class
+cn\hlx_dm\mapper\DmLinkUserMapper.class
+cn\hlx_dm\mapper\DmUserMapper.class
+cn\hlx_dm\HLXApplication.class
+cn\hlx_dm\mapper\DmSchedulerSeatMapper.class
+cn\hlx_dm\mapper\DmAreaMapper.class
+cn\hlx_dm\mapper\DmItemTypeMapper.class
+cn\hlx_dm\mapper\DmKeywordSortMapper.class
+cn\hlx_dm\mapper\DmTradeMapper.class
+cn\hlx_dm\mapper\DmSchedulerSeatPriceMapper.class
+cn\hlx_dm\pojo\DmOrderMapper.class

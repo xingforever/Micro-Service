@@ -1,0 +1,16 @@
+cn\hlx_dm\pojo\DmSchedulerSeat.class
+cn\hlx_dm\pojo\DmOrderLinkUser.class
+cn\hlx_dm\pojo\DmLinkUser.class
+cn\hlx_dm\pojo\DmCinemaSeat.class
+cn\hlx_dm\pojo\DmSchedulerSeatPrice.class
+cn\hlx_dm\pojo\DmImage.class
+cn\hlx_dm\pojo\DmCinema.class
+cn\hlx_dm\pojo\DmTrade.class
+cn\hlx_dm\pojo\DmOrder.class
+cn\hlx_dm\pojo\DmKeywordSort.class
+cn\hlx_dm\pojo\DmUser.class
+cn\hlx_dm\pojo\DmArea.class
+cn\hlx_dm\pojo\DmScheduler.class
+cn\hlx_dm\pojo\DmItemComment.class
+cn\hlx_dm\pojo\DmItem.class
+cn\hlx_dm\pojo\DmItemType.class

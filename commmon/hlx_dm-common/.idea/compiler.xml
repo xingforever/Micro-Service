@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hlx_dm-common-module" />
+        <module name="hlx_dm-common-client" />
+        <module name="hlx_dm-common-dao" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hlx_dm-common" target="1.5" />
+      <module name="hlx_dm-common-client" target="6" />
+      <module name="hlx_dm-common-dao" target="1.5" />
+      <module name="hlx_dm-common-module" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

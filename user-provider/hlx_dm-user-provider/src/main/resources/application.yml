@@ -1,0 +1,16 @@
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:root123@localhost:7776/eureka/
+logging:
+  level: info
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    base-url: http://localhost:7700
+  application:
+    name: hlx_dm-user-provider
