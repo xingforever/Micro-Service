@@ -1,0 +1,17 @@
+server:
+  port: 7051
+spring:
+  application:
+    name: hlx_dm-scheduler-provider
+  datasource:
+    url: jdbc:mysql://localhost:3306/dm_scheduler?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root123
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+moduleName: hlx_dm-scheduler-provider
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:root123@localhost:7776/eureka/

@@ -34,4 +34,9 @@ public class DmImageClientFallBack implements RestDmImageClient {
     public Integer qdtxModifyDmImage(DmImage dmImage)throws Exception{
         return null;
     }
+
+    @Override
+    public List<DmImage> queryDmImageList(Long targetId, Integer type, Integer category) throws Exception {
+        return null;
+    }
 }

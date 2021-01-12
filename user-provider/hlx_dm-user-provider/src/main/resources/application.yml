@@ -1,5 +1,7 @@
 server:
-  port: 8082
+  port: 7011
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
 eureka:
   client:
     service-url:
@@ -7,10 +9,10 @@ eureka:
 logging:
   level: info
 spring:
-  sleuth:
-    sampler:
-      percentage: 1.0
-  zipkin:
-    base-url: http://localhost:7700
   application:
     name: hlx_dm-user-provider
+  datasource:
+    url: jdbc:mysql://localhost:3306/dm_user?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root123
+    driver-class-name: com.mysql.jdbc.Driver

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
 * Created by shang-pc on 2018/5/15.
 */
-@FeignClient(name = "dm-user-provider", configuration = DmConfiguration.class, fallback = DmLinkUserClientFallBack.class)
+@FeignClient(name = "hlx_dm-user-provider", configuration = DmConfiguration.class, fallback = DmLinkUserClientFallBack.class)
 public interface RestDmLinkUserClient {
 @RequestMapping(value = "/getDmLinkUserById",method = RequestMethod.POST)
 public DmLinkUser getDmLinkUserById(@RequestParam("id") Long id)throws Exception;

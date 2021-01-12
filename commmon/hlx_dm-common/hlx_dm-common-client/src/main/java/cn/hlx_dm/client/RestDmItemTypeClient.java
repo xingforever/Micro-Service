@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
 * Created by shang-pc on 2018/5/15.
 */
-@FeignClient(name = "dm-item-provider", configuration = DmConfiguration.class, fallback = DmItemTypeClientFallBack.class)
+@FeignClient(name = "hlx_dm-item-provider", configuration = DmConfiguration.class, fallback = DmItemTypeClientFallBack.class)
 public interface RestDmItemTypeClient {
 
 @RequestMapping(value = "/getDmItemTypeById",method = RequestMethod.POST)

@@ -3,5 +3,10 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/hlx_dm-common-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hlx_dm-common-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hlx_dm-common-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hlx_dm-common-dto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hlx_dm-common-ext-utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hlx_dm-common-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hlx_dm-common-utils/src/main/java" charset="UTF-8" />
   </component>
 </project>

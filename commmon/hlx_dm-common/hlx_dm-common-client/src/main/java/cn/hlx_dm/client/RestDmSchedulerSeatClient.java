@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
 * Created by shang-pc on 2018/5/15.
 */
-@FeignClient(name = "dm-scheduler-provider", configuration = DmConfiguration.class, fallback = DmSchedulerSeatClientFallBack.class)
+@FeignClient(name = "hlx_dm-scheduler-provider", configuration = DmConfiguration.class, fallback = DmSchedulerSeatClientFallBack.class)
 public interface RestDmSchedulerSeatClient {
 @RequestMapping(value = "/getDmSchedulerSeatById",method = RequestMethod.POST)
 public DmSchedulerSeat getDmSchedulerSeatById(@RequestParam("id") Long id)throws Exception;

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
 * Created by shang-pc on 2018/5/15.
 */
-@FeignClient(name = "dm-pay-provider", configuration = DmConfiguration.class, fallback = DmTradeClientFallBack.class)
+@FeignClient(name = "hlx_dm-pay-provider", configuration = DmConfiguration.class, fallback = DmTradeClientFallBack.class)
 public interface RestDmTradeClient {
 
 @RequestMapping(value = "/getDmTradeById",method = RequestMethod.POST)

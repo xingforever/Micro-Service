@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
 * Created by shang-pc on 2018/5/15.
 */
-@FeignClient(name = "dm-common-provider", configuration = DmConfiguration.class, fallback = DmImageClientFallBack.class)
+@FeignClient(name = "hlx_dm-common-provider", configuration = DmConfiguration.class, fallback = DmImageClientFallBack.class)
 public interface RestDmImageClient {
 
     @RequestMapping(value = "/getDmImageById",method = RequestMethod.POST)
@@ -31,4 +31,7 @@ public interface RestDmImageClient {
 
     @RequestMapping(value = "/qdtxModifyDmImage",method = RequestMethod.POST)
     public Integer qdtxModifyDmImage(@RequestBody DmImage dmImage)throws Exception;
+    @RequestMapping(value = "/queryDmImageList",method = RequestMethod.POST)
+    public  List<DmImage> queryDmImageList(@RequestParam("targetId") Long targetId, @RequestParam("type") Integer type,
+                                    @RequestParam("category") Integer category)throws Exception;
 }

@@ -6,16 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hlx_dm-common-module" />
         <module name="hlx_dm-common-client" />
         <module name="hlx_dm-common-dao" />
+        <module name="hlx_dm-common-dto" />
+        <module name="hlx_dm-common-utils" />
+        <module name="hlx_dm-common-ext-utils" />
+        <module name="hlx_dm-common-module" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="hlx_dm-common" target="1.5" />
+      <module name="hlx_dm-common" target="1.6" />
       <module name="hlx_dm-common-client" target="6" />
-      <module name="hlx_dm-common-dao" target="1.5" />
-      <module name="hlx_dm-common-module" target="1.5" />
+      <module name="hlx_dm-common-dao" target="1.6" />
+      <module name="hlx_dm-common-dto" target="1.6" />
+      <module name="hlx_dm-common-ext-utils" target="1.6" />
+      <module name="hlx_dm-common-module" target="1.6" />
+      <module name="hlx_dm-common-utils" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

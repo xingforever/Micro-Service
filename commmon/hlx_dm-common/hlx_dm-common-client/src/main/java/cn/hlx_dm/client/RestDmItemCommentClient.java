@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
 * Created by shang-pc on 2018/5/15.
 */
-@FeignClient(name = "dm-item-provider", configuration = DmConfiguration.class, fallback = DmItemCommentClientFallBack.class)
+@FeignClient(name = "hlx_dm-item-provider", configuration = DmConfiguration.class, fallback = DmItemCommentClientFallBack.class)
 public interface RestDmItemCommentClient {
 
 @RequestMapping(value = "/getDmItemCommentById",method = RequestMethod.POST)

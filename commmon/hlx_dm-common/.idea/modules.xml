@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/hlx_dm-common.iml" filepath="$PROJECT_DIR$/hlx_dm-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/hlx_dm-common-client/hlx_dm-common-client.iml" filepath="$PROJECT_DIR$/hlx_dm-common-client/hlx_dm-common-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/hlx_dm-common-dao/hlx_dm-common-dao.iml" filepath="$PROJECT_DIR$/hlx_dm-common-dao/hlx_dm-common-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hlx_dm-common-dto/hlx_dm-common-dto.iml" filepath="$PROJECT_DIR$/hlx_dm-common-dto/hlx_dm-common-dto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hlx_dm-common-ext-utils/hlx_dm-common-ext-utils.iml" filepath="$PROJECT_DIR$/hlx_dm-common-ext-utils/hlx_dm-common-ext-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/hlx_dm-common-module/hlx_dm-common-module.iml" filepath="$PROJECT_DIR$/hlx_dm-common-module/hlx_dm-common-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hlx_dm-common-utils/hlx_dm-common-utils.iml" filepath="$PROJECT_DIR$/hlx_dm-common-utils/hlx_dm-common-utils.iml" />
     </modules>
   </component>
 </project>

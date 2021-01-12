@@ -1,0 +1,10 @@
+server:
+  port: 7201
+spring:
+  application:
+    name: hlx_dm-item-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:root123@localhost:7776/eureka/
+moduleName: hlx_dm-item-consumer

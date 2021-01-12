@@ -13,7 +13,15 @@
         <module>hlx_dm-common-module</module>
         <module>hlx_dm-common-dao</module>
         <module>hlx_dm-common-client</module>
+        <module>hlx_dm-common-utils</module>
+        <module>hlx_dm-common-dto</module>
+        <module>hlx_dm-common-ext-utils</module>
     </modules>
-
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.6.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
 </project>

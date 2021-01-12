@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
 * Created by shang-pc on 2018/5/15.
 */
-@FeignClient(name = "dm-item-provider", configuration = DmConfiguration.class, fallback = DmCinemaSeatClientFallBack.class)
+@FeignClient(name = "hlx_dm-item-provider", configuration = DmConfiguration.class, fallback = DmCinemaSeatClientFallBack.class)
 public interface RestDmCinemaSeatClient {
 
 @RequestMapping(value = "/getDmCinemaSeatById",method = RequestMethod.POST)
