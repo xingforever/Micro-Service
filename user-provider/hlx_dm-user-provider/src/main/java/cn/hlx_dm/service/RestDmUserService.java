@@ -50,4 +50,8 @@ public class RestDmUserService {
         dmUser.setUpdatedTime(new Date());
         return dmUserMapper.updateDmUser(dmUser);
      }
+    @RequestMapping(value = "/checkLoginByPassword",method = RequestMethod.POST)
+    public DmUser checkLoginByPassword(@RequestBody DmUser dmUser)throws Exception{
+         return dmUserMapper.checkLoginByPassword(dmUser.getPhone(),dmUser.getPassword());
+    }
 }

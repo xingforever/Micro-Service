@@ -22,4 +22,7 @@ public interface DmUserMapper {
 
 	public Integer batchDeleteDmUser(Map<String,List<String>> params);
 
+	public DmUser  checkLoginByPassword(@Param(value = "phone") String phone,@Param(value = "password") String password);
+
+
 }

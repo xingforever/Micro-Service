@@ -34,4 +34,14 @@ public class DmUserClientFallBack implements RestDmUserClient {
     public Integer qdtxModifyDmUser(DmUser dmUser)throws Exception{
         return null;
     }
+
+    @Override
+    public DmUser checkLoginByPassWord(DmUser dmUser) throws Exception {
+        return null;
+    }
+
+    @Override
+    public String generateToken(DmUser dmUser) throws Exception {
+        return null;
+    }
 }

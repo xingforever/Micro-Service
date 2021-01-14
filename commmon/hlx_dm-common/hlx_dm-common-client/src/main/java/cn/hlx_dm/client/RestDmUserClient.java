@@ -30,5 +30,9 @@ public Integer qdtxAddDmUser(@RequestBody DmUser dmUser)throws Exception;
 
 @RequestMapping(value = "/qdtxModifyDmUser",method = RequestMethod.POST)
 public Integer qdtxModifyDmUser(@RequestBody DmUser dmUser)throws Exception;
-}
 
+@RequestMapping(value = "/checkLoginByPassWord",method = RequestMethod.POST)
+    public DmUser checkLoginByPassWord(@RequestBody DmUser dmUser)throws Exception;
+@RequestMapping(value = "/generateToken",method = RequestMethod.POST)
+    public  String  generateToken(@RequestBody DmUser dmUser)throws Exception;;
+}

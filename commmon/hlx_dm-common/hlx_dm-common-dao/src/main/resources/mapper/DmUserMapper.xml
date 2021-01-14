@@ -125,7 +125,30 @@
                 </if>
         </trim>
     </select>
-
+    <select id="checkLoginByPassword" resultType="cn.hlx_dm.pojo.DmUser">
+        select
+        id as id,
+        phone as phone,
+        password as password,
+        wxUserId as wxUserId,
+        realName as realName,
+        nickName as nickName,
+        sex as sex,
+        hobby as hobby,
+        idCard as idCard,
+        birthday as birthday,
+        createdTime as createdTime,
+        updatedTime as updatedTime
+        from dm_user
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="phone != null">
+                and phone=#{phone}
+            </if>
+            <if test="password != null">
+                and password=#{password}
+            </if>
+        </trim>
+    </select>
     <insert id="insertDmUser" parameterType="cn.hlx_dm.pojo.DmUser">
         insert into dm_user(
                         phone,
