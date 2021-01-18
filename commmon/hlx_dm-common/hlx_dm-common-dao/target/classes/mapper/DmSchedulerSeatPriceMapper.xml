@@ -126,4 +126,23 @@
                         </if>
         </trim>
     </update>
+    <select id="getDmSchedulerSeatPriceBySchedulerIdAndArea" resultType="cn.hlx_dm.pojo.DmSchedulerSeatPrice">
+        select
+        id as id,
+        price as price,
+        areaLevel as areaLevel,
+        scheduleId as scheduleId,
+        seatNum as seatNum,
+        createdTime as createdTime,
+        updatedTime as updatedTime
+        from dm_scheduler_seat_price
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="areaLevel != null">
+                and areaLevel=#{areaLevel}
+            </if>
+            <if test="scheduleId != null">
+                and scheduleId=#{scheduleId}
+            </if>
+        </trim>
+    </select>
 </mapper>

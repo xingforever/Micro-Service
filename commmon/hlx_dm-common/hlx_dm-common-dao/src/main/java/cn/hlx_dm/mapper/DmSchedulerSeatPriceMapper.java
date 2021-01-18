@@ -21,5 +21,7 @@ public interface DmSchedulerSeatPriceMapper {
 	public Integer deleteDmSchedulerSeatPriceById(@Param(value = "id") Long id)throws Exception;
 
 	public Integer batchDeleteDmSchedulerSeatPrice(Map<String,List<String>> params);
+	public DmSchedulerSeatPrice getDmSchedulerSeatPriceBySchedulerIdAndArea(@Param(value = "areaLevel") Integer areaLevel,
+																			@Param(value = "scheduleId") Long scheduleId);
 
 }

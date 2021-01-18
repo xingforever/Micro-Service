@@ -1,4 +1,5 @@
 package cn.hlx_dm.client;
+import cn.hlx_dm.pojo.DmScheduler;
 import cn.hlx_dm.pojo.DmSchedulerSeat;
 
 import cn.hlx_dm.fallback.DmSchedulerSeatClientFallBack;
@@ -30,5 +31,8 @@ public Integer qdtxAddDmSchedulerSeat(@RequestBody DmSchedulerSeat dmSchedulerSe
 
 @RequestMapping(value = "/qdtxModifyDmSchedulerSeat",method = RequestMethod.POST)
 public Integer qdtxModifyDmSchedulerSeat(@RequestBody DmSchedulerSeat dmSchedulerSeat)throws Exception;
+
+@RequestMapping(value = "/getDmSchedulerSeatByOrder",method = RequestMethod.POST)
+public DmSchedulerSeat getDmSchedulerSeatByOrder(@RequestParam("scheduleId") long scheduleId,@RequestParam("x") Integer x,@RequestParam("y") Integer y)throws Exception;
 }
 

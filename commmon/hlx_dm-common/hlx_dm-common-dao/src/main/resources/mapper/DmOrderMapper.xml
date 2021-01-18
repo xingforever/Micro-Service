@@ -206,7 +206,7 @@
         </trim>
     </select>
 
-    <insert id="insertDmOrder" parameterType="cn.hlx_dm.pojo.DmOrder">
+    <insert id="insertDmOrder" keyProperty="id" useGeneratedKeys="true"  parameterType="cn.hlx_dm.pojo.DmOrder">
         insert into dm_order(
                         orderNo,
                         userId,
@@ -253,7 +253,7 @@
                     #{updatedTime})
     </insert>
 
-    <update id="updateDmOrder" parameterType="cn.hlx_dm.pojo.DmOrder">
+    <update id="updateDmOrder" keyProperty="id" useGeneratedKeys="true" parameterType="cn.hlx_dm.pojo.DmOrder">
         update dm_order
         <trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
                         <if test="orderNo != null and orderNo!=''">
@@ -321,4 +321,7 @@
                         </if>
         </trim>
     </update>
+    <delete id="deleteDmOrderById" parameterType="long">
+        DELETE FROM  dm_order WHERE id=#{id}
+    </delete>
 </mapper>

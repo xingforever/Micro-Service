@@ -34,4 +34,9 @@ public class DmSchedulerSeatPriceClientFallBack implements RestDmSchedulerSeatPr
     public Integer qdtxModifyDmSchedulerSeatPrice(DmSchedulerSeatPrice dmSchedulerSeatPrice)throws Exception{
         return null;
     }
+
+    @Override
+    public DmSchedulerSeatPrice getDmSchedulerSeatPriceBySchedulerIdAndArea(Long scheduleId, Integer areaLevel) throws Exception {
+        return null;
+    }
 }

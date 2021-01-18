@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import cn.hlx_dm.config.DmConfiguration;
+import cn.hlx_dm.pojo.DmScheduler;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -26,9 +27,13 @@ public List<DmOrder>	getDmOrderListByMap(@RequestParam Map<String,Object> param)
 public Integer getDmOrderCountByMap(@RequestParam Map<String,Object> param)throws Exception;
 
 @RequestMapping(value = "/qdtxAddDmOrder",method = RequestMethod.POST)
-public Integer qdtxAddDmOrder(@RequestBody DmOrder dmOrder)throws Exception;
+public Long qdtxAddDmOrder(@RequestBody DmOrder dmOrder)throws Exception;
 
 @RequestMapping(value = "/qdtxModifyDmOrder",method = RequestMethod.POST)
-public Integer qdtxModifyDmOrder(@RequestBody DmOrder dmOrder)throws Exception;
+public Long qdtxModifyDmOrder(@RequestBody DmOrder dmOrder)throws Exception;
+
+
+
 }
+
 

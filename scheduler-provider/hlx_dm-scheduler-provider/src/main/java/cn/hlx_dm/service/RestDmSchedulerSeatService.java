@@ -50,4 +50,10 @@ public class RestDmSchedulerSeatService {
         dmSchedulerSeat.setUpdatedTime(new Date());
         return dmSchedulerSeatMapper.updateDmSchedulerSeat(dmSchedulerSeat);
      }
+    @RequestMapping(value = "/getDmSchedulerSeatByOrder", method = RequestMethod.POST)
+    public DmSchedulerSeat getDmSchedulerSeatByOrder(@RequestParam Long scheduleId,
+                                                     @RequestParam Integer x,
+                                                     @RequestParam Integer y) throws Exception {
+        return dmSchedulerSeatMapper.getDmSchedulerSeatByOrder(scheduleId, x, y);
+    }
 }

@@ -10,8 +10,8 @@ cn\hlx_dm\mapper\DmUserMapper.class
 cn\hlx_dm\HLXApplication.class
 cn\hlx_dm\mapper\DmSchedulerSeatMapper.class
 cn\hlx_dm\mapper\DmAreaMapper.class
+cn\hlx_dm\mapper\DmOrderMapper.class
 cn\hlx_dm\mapper\DmItemTypeMapper.class
 cn\hlx_dm\mapper\DmKeywordSortMapper.class
 cn\hlx_dm\mapper\DmTradeMapper.class
 cn\hlx_dm\mapper\DmSchedulerSeatPriceMapper.class
-cn\hlx_dm\pojo\DmOrderMapper.class

@@ -1,11 +1,13 @@
 package cn.hlx_dm.service;
 
+
+import cn.hlx_dm.mapper.DmOrderMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import cn.hlx_dm.mapper.DmOrderMapper;
+
 import cn.hlx_dm.pojo.DmOrder;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,13 +42,13 @@ public class RestDmOrderService {
      }
 
      @RequestMapping(value = "/qdtxAddDmOrder",method = RequestMethod.POST)
-     public Integer qdtxAddDmOrder(@RequestBody DmOrder dmOrder)throws Exception{
+     public Long qdtxAddDmOrder(@RequestBody DmOrder dmOrder)throws Exception{
         dmOrder.setCreatedTime(new Date());
         return dmOrderMapper.insertDmOrder(dmOrder);
      }
 
      @RequestMapping(value = "/qdtxModifyDmOrder",method = RequestMethod.POST)
-     public Integer qdtxModifyDmOrder(@RequestBody DmOrder dmOrder)throws Exception{
+     public Long qdtxModifyDmOrder(@RequestBody DmOrder dmOrder)throws Exception{
         dmOrder.setUpdatedTime(new Date());
         return dmOrderMapper.updateDmOrder(dmOrder);
      }

@@ -1,9 +1,15 @@
 package cn.hlx_dm.fallback;
 
+import cn.hlx_dm.pojo.DmScheduler;
 import cn.hlx_dm.pojo.DmSchedulerSeat;
 
 import cn.hlx_dm.client.RestDmSchedulerSeatClient;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import java.util.List;
 import java.util.Map;
 @Component
@@ -34,4 +40,11 @@ public class DmSchedulerSeatClientFallBack implements RestDmSchedulerSeatClient 
     public Integer qdtxModifyDmSchedulerSeat(DmSchedulerSeat dmSchedulerSeat)throws Exception{
         return null;
     }
+
+
+    @RequestMapping(value = "/getDmSchedulerSeatByOrder",method = RequestMethod.POST)
+    public DmSchedulerSeat getDmSchedulerSeatByOrder(@RequestParam long scheduleId, @RequestParam Integer x, @RequestParam Integer y)throws Exception{
+        return null;
+    }
+
 }

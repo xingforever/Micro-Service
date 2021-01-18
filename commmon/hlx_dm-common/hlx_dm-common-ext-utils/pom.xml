@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>hlx_dm-common-ext-utils</artifactId>
-
+    <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>cz.mallat.uasparser</groupId>
@@ -23,11 +23,6 @@
             <version>1.4.5.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.amqp</groupId>
-            <artifactId>spring-rabbit</artifactId>
-
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-activemq</artifactId>
         </dependency>
@@ -36,6 +31,7 @@
             <artifactId>jms</artifactId>
             <version>1.1</version>
         </dependency>
+
         <dependency>
             <groupId>cn.hlx_dm</groupId>
             <artifactId>hlx_dm-common-dto</artifactId>
@@ -44,7 +40,7 @@
         <dependency>
             <groupId>org.springframework.amqp</groupId>
             <artifactId>spring-amqp</artifactId>
-
+            <version>RELEASE</version>
         </dependency>
         <dependency>
             <groupId>cn.hlx_dm</groupId>
@@ -72,14 +68,5 @@
             <version>2.9.0</version>
         </dependency>
     </dependencies>
-    <distributionManagement>
-        <repository>
-            <id>releases</id>
-            <url>http://nexus.local.com/content/repositories/thirdparty</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <url>http://nexus.local.com/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+
 </project>

@@ -50,4 +50,10 @@ public class RestDmSchedulerSeatPriceService {
         dmSchedulerSeatPrice.setUpdatedTime(new Date());
         return dmSchedulerSeatPriceMapper.updateDmSchedulerSeatPrice(dmSchedulerSeatPrice);
      }
+    @RequestMapping(value = "/getDmSchedulerSeatPriceBySchedulerIdAndArea",method = RequestMethod.POST)
+    public DmSchedulerSeatPrice getDmSchedulerSeatPriceBySchedulerIdAndArea(@RequestParam("scheduleId") Long scheduleId,
+                                                                            @RequestParam("areaLevel") Integer areaLevel)throws Exception{
+
+        return dmSchedulerSeatPriceMapper.getDmSchedulerSeatPriceBySchedulerIdAndArea(areaLevel,scheduleId);
+    }
 }

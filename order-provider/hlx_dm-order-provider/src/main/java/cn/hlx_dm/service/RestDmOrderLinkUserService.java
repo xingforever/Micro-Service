@@ -47,7 +47,11 @@ public class RestDmOrderLinkUserService {
 
      @RequestMapping(value = "/qdtxModifyDmOrderLinkUser",method = RequestMethod.POST)
      public Integer qdtxModifyDmOrderLinkUser(@RequestBody DmOrderLinkUser dmOrderLinkUser)throws Exception{
-        dmOrderLinkUser.setUpdatedTime(new Date());
+        dmOrderLinkUser.setUpdatedTime(new Date().getTime());
         return dmOrderLinkUserMapper.updateDmOrderLinkUser(dmOrderLinkUser);
      }
+//    @RequestMapping(value = "/deleteDmOrderLinkUserByOrderId",method = RequestMethod.POST)
+//    public Integer deleteDmOrderLinkUserByOrderId(@RequestParam("orderId") Long orderId)throws Exception{
+//        return dmOrderLinkUserMapper.deleteDmOrderLinkUserByOrderId(orderId);
+//    }
 }

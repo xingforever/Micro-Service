@@ -30,5 +30,9 @@ public Integer qdtxAddDmSchedulerSeatPrice(@RequestBody DmSchedulerSeatPrice dmS
 
 @RequestMapping(value = "/qdtxModifyDmSchedulerSeatPrice",method = RequestMethod.POST)
 public Integer qdtxModifyDmSchedulerSeatPrice(@RequestBody DmSchedulerSeatPrice dmSchedulerSeatPrice)throws Exception;
+
+@RequestMapping(value = "/getDmSchedulerSeatPriceBySchedulerIdAndArea", method = RequestMethod.POST)
+public DmSchedulerSeatPrice getDmSchedulerSeatPriceBySchedulerIdAndArea(@RequestParam("scheduleId") Long scheduleId,
+                                                                            @RequestParam("areaLevel") Integer areaLevel) throws Exception;
 }
 

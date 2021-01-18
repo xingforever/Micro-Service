@@ -22,4 +22,7 @@ public interface DmSchedulerSeatMapper {
 
 	public Integer batchDeleteDmSchedulerSeat(Map<String,List<String>> params);
 
+	public DmSchedulerSeat getDmSchedulerSeatByOrder(@Param(value = "scheduleId") Long scheduleId,
+													 @Param(value = "x") Integer x,
+													 @Param(value = "y") Integer y);
 }
